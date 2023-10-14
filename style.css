@@ -116,7 +116,7 @@ ul li a {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
     grid-row-gap: 40px;
-    padding: 10px 40px 140px;
+    padding: 10px 70px 100px;
 }
 
 .item1,
@@ -536,7 +536,8 @@ input {
     }
     
     .trade-info {
-        padding: auto 25px,
+           width: 90%;
+           padding-left: 23px;
         }
 
     #trade {
@@ -635,8 +636,7 @@ input {
     .week3>p,
     .week4>p {
         padding: 0 15px 17px;
-    }
+        }
     .items {
-        justify-content: center;
-        align-items: center;
+        padding: 0 30px 80px;
 }
