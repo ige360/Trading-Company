@@ -548,19 +548,19 @@ input {
     }
 
     #ending>h2 {
-        padding-top: 70px;
+        padding-top: 30px;
     }
 
     .submit {
-        padding-top: 70px;
+        padding-top: 30px;
     }
 
     .Copyright {
-        padding-top: 80px;
+        padding-bottom: 30px;
     }
 
     .social-icon {
-        padding-top: 150px;
+        padding-top: 20px;
     }
 
     nav {
@@ -632,4 +632,7 @@ input {
     .week4>p {
         padding: 0 15px 17px;
     }
+    .items {
+        justify-content: center;
+        align-items: center;
 }
