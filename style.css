@@ -534,6 +534,10 @@ input {
     .trade-info>p {
         text-align: center;
     }
+    
+    .trade-info {
+        padding: auto 25px,
+        }
 
     #trade {
         padding: 40px 20px;
