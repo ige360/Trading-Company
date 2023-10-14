@@ -1,0 +1,635 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header {
+    background: linear-gradient(0deg, plum, #fff);
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 150px;
+    background-color: #fff;
+    position: fixed;
+    height: 10vh;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    padding: 0 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    background-color: black;
+    padding: 10px 20px;
+    border-radius: 50px;
+
+}
+
+.burger {
+    display: none;
+}
+
+.title-page {
+    display: flex;
+    height: 110vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-page>h1 {
+    text-transform: uppercase;
+    color: purple;
+    font-weight: bold;
+    padding-top: 30px;
+    width: 40%;
+    text-align: center;
+    font-size: 5rem;
+}
+
+.title-page>h3 {
+    font-size: 2rem;
+    color: #694e4e;
+    width: 50%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.title-button {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.title-button>button {
+    padding: 10px 70px;
+    width: 100%;
+    border-radius: 40px;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid yellow;
+    background-color: yellow;
+}
+
+.title-button>button:hover {
+    color: yellow;
+    background-color: black;
+    border: 1px solid black;
+}
+
+#features {
+    background-color: plum;
+}
+
+#features>h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 3rem;
+    padding: 120px 0;
+}
+
+.items {
+    /* display: flex;
+    justify-content: space-evenly;
+    padding: 10px 40px 50px; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    grid-row-gap: 40px;
+    padding: 10px 40px 140px;
+}
+
+.item1,
+.item2,
+.item3 {
+    background-color: #fff;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 370px;
+
+}
+
+.icon {
+    width: 380px;
+    height: 320px;
+    padding: 20px;
+    border-radius: 60px;
+}
+
+.item1>h1,
+.item2>h1,
+.item3>h1 {
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding: 10px 0;
+}
+
+.item1>p,
+.item2>p,
+.item3>p {
+    color: purple;
+}
+
+.item1>button,
+.item2>button,
+.item3>button {
+    padding: 10px 20px;
+    border-radius: 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid yellow;
+    background-color: yellow;
+    margin-bottom: 20px;
+}
+
+#trade {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    padding: 40px 70px;
+}
+
+.trade-info {
+    padding-top: 70px;
+}
+
+.trade-info>h1 {
+    text-transform: uppercase;
+    color: purple;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.trade-info>h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.6rem;
+    padding: 25px 0;
+}
+
+.trade-info>p {
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+.trade-img1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+.trade-img {
+    height: 500px;
+}
+
+#feature {
+    background-color: plum;
+    padding: 20px 0;
+}
+
+#feature>h2 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 3.4rem;
+    text-align: center;
+    padding: 60px;
+}
+
+.feature-head1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+}
+
+.feature-para1 {
+    text-align: center;
+    color: #fff;
+    padding-top: 20px;
+    font-size: 22px;
+}
+
+strong {
+    font-weight: bolder;
+}
+
+.circle {
+    width: 260px;
+    height: 260px;
+    background-color: yellow;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0 75px;
+}
+
+.circle>p {
+    line-height: 1.5;
+    text-align: center;
+    width: 70%;
+}
+
+.feature-head2 {
+    color: purple;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 25px 0 15px;
+    text-align: center;
+}
+
+.feature-para2 {
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    line-height: 1.3;
+    color: #694e4e;
+}
+
+.week {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 30px 40px;
+    padding-bottom: 100px;
+    grid-row-gap: 40px;
+}
+
+.week1,
+.week2,
+.week3,
+.week4 {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.week1 {
+    background-image: url(images/features1.jpg);
+}
+
+.week2 {
+    background-image: url(images/features2.jpg);
+}
+
+.week3 {
+    background-image: url(images/features3.jpg);
+}
+
+.week4 {
+    background-image: url(images/features4.jpg);
+}
+
+.week1>h3,
+.week2>h3,
+.week3>h3,
+.week4>h3 {
+    color: #fff;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 26px;
+}
+
+.week1>p,
+.week2>p,
+.week3>p,
+.week4>p {
+    color: #fff;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+#compensation {
+    background-color: #fff;
+    text-align: center;
+    padding: 160px;
+}
+
+#compensation>h2 {
+    color: purple;
+    text-transform: uppercase;
+    font-size: 32px;
+    padding: 20px;
+}
+
+#compensation>p {
+    font-size: 24px;
+    text-align: center;
+    color: #694e4e;
+    line-height: 1.4;
+}
+
+#pricing {
+    background-color: plum;
+    padding: 70px 100px;
+}
+
+#pricing>h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    padding-bottom: 70px;
+    color: #fff;
+}
+
+.pricing-table {
+    display: grid;
+    border-radius: 40px;
+    padding-bottom: 100px;
+}
+
+#pricing-icon {
+    font-size: 70px;
+    padding-bottom: 10px;
+    color: plum;
+}
+
+.plan2 {
+    background-color: yellow;
+    cursor: pointer;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 40px;
+}
+
+.plan {
+    text-align: center;
+    text-transform: capitalize;
+    padding: 40px;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.plan>p,
+.plan2>p,
+.plan3>p {
+    padding-bottom: 15px;
+    font-size: 21px;
+    color: purple;
+}
+
+.plan>h4,
+.plan2>h4,
+.plan3>h4 {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.plan3 {
+    text-align: center;
+    text-transform: capitalize;
+    padding: 40px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+.plan1 {
+    background-color: #fff;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+}
+
+.plan1>h3 {
+    text-align: center;
+    color: purple;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    padding: 40px;
+}
+
+#ending {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0 30px;
+
+}
+
+#ending>h2 {
+    text-transform: uppercase;
+    padding: 30px;
+}
+
+.social-icon {
+    padding: 40px 0 0;
+}
+
+.social-icon>a {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border: 1.3rem solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0.2rem 0.5rem;
+    font-size: 1.6rem;
+    color: black;
+    margin: 0 5px;
+}
+
+.social-icon>a:hover {
+    scale: 1.2;
+}
+
+.socials {
+    text-transform: uppercase;
+    padding: 20px 0 100px;
+}
+
+.submit>a {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    width: 2.4rem;
+    height: 2.4rem;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    margin-left: 10px;
+    background-color: #fff;
+
+}
+
+input {
+    border: none;
+    outline: none;
+    height: 30px;
+    color: #694e4e;
+    font-size: 20px;
+    width: 270px;
+    background-color: black;
+    border-bottom: 3px solid #fff;
+}
+
+@media (max-width: 768px) {
+    .circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .week {
+        padding: 30px 10px 140px;
+    }
+
+    #compensation {
+        padding: 100px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .trade-info>h1,
+    .trade-info>h2,
+    .trade-info>p {
+        text-align: center;
+    }
+
+    #trade {
+        padding: 40px 20px;
+    }
+
+    #pricing {
+        padding: 50px 20px;
+    }
+
+    #ending {
+        height: 80vh;
+    }
+
+    #ending>h2 {
+        padding-top: 70px;
+    }
+
+    .submit {
+        padding-top: 70px;
+    }
+
+    .Copyright {
+        padding-top: 80px;
+    }
+
+    .social-icon {
+        padding-top: 150px;
+    }
+
+    nav {
+        padding: 10px 40px;
+    }
+
+    ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: #fff;
+        top: 60px;
+        height: 55vh;
+        left: 0;
+        width: 100%;
+    }
+
+    ul li {
+        padding: 20px 0;
+        font-weight: bolder;
+        scale: 1.2;
+    }
+
+    ul.active {
+        display: flex;
+    }
+
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+
+
+    .burger .bar {
+        width: 30px;
+        height: 10px;
+        background-color: black;
+    }
+
+    .title-page {
+        padding: 20px 20px;
+    }
+
+    .title-page>h1 {
+        text-align: center;
+        font-size: 40px;
+        width: 100%;
+        padding-top: 70px;
+    }
+
+    .title-page>h3 {
+        text-align: center;
+        width: 100%;
+        font-size: 25px;
+    }
+
+    .title-button {
+        flex-direction: column;
+    }
+
+    #menu-icon {
+        font-size: 35px;
+        cursor: pointer;
+    }
+
+    .week1>p,
+    .week2>p,
+    .week3>p,
+    .week4>p {
+        padding: 0 15px 17px;
+    }
+}
