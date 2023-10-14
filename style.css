@@ -537,11 +537,11 @@ input {
     
     .trade-info {
            width: 90%;
-           padding-left: 23px;
+           padding-left: 15px;
         }
 
     #trade {
-        padding: 40px 20px;
+        padding: 40px 10px;
     }
 
     #pricing {
@@ -639,4 +639,11 @@ input {
         }
     .items {
         padding: 0 30px 80px;
+        }
+        .icon {
+            width: 310px;
+            }
+        .item1, .item2, .item3 {
+            width: 320px;
+            }
 }
