@@ -646,4 +646,9 @@ input {
         .item1, .item2, .item3 {
             width: 320px;
             }
+        #feature {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 }
